@@ -6,6 +6,9 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.decomposition import TruncatedSVD
 
 # 1. PREPARACIÓN DE RECURSOS DE PROCESAMIENTO DE LENGUAJE NATURAL (NLP)
 
@@ -134,3 +137,4 @@ def ejecutar_clasificador():
 
 if __name__ == "__main__":
     ejecutar_clasificador()
+   
